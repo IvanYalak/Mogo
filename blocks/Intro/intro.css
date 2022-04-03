@@ -1,0 +1,107 @@
+.Intro__conteiner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+.intro__header{
+    margin-top: 5vh;
+}
+.intro__h1{
+    position: relative;
+}
+.intro__h1::after{
+    content: "";
+    border: 2px solid #F38281;
+    position: absolute;
+    top: 86px;
+    left: 66px;
+    width: 170px;
+    background-color: #F38281;
+}
+.intro__content{
+    margin: 4vh 13vw;
+    display: flex;
+    align-items: center;
+    
+}
+.intro__imgConteiner{
+    display: flex;
+    gap: 30px;
+    position: relative;
+    margin-top: 5.8vh;
+}
+.intro__imgteam{
+    width: 370px;
+    height: 338px;
+    position: absolute;
+    top: -16;
+    left: -16;
+    font-size: 24px;
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
+    cursor: pointer;
+}
+.intro__imgteam_smart1{
+    display: none;
+}
+.intro__imgteam_smart2{
+    display: none;
+}
+@media (max-height: 694px) and (max-width: 1024px){
+    .intro__imgteam{
+        width: 317px;
+        height: 283px;
+        top: -6;
+        left: -6;
+    }
+}
+@media (max-height: 574px) and (max-width: 320px){
+    .intro__imgConteiner{
+        flex-direction: column;
+    }
+    .intro__imgteam{
+        width: 288;
+        height: 83;
+        left: 0;
+        top: 176;
+        font-size: 18px;
+        flex-direction: row;
+    }
+    
+    .intro__imgteam_smart1{
+        color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        top: 474;
+        position: absolute;
+        width: 288;
+        height: 83;
+        gap: 3vh;
+        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+    }
+    .intro__imgteam_smart2{
+        color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        top: 770;
+        position: absolute;
+        width: 288;
+        height: 83;
+        gap: 3vh;
+        left: 0;
+        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+    }
+}

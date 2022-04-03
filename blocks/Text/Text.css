@@ -1,0 +1,67 @@
+.text__header{
+    font-family: Raleway;
+font-size:14px;
+font-weight: 600;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFFFFF;
+text-decoration: none;
+position: relative;
+transition: all 0.5s;
+}
+.text__Koushan{
+    font-family: Kaushan Script;
+font-size: 44px;
+font-weight: 400;
+
+letter-spacing: 0em;
+text-align: center;
+color: #FFFFFF;
+}
+.text__bigHeader{
+    font-family: Montserrat;
+font-size: 90px;
+font-weight: 700;
+
+letter-spacing: 0em;
+text-align: center;
+color: #FFFFFF;
+}
+.text__headerKaushan{
+    font-family: Kaushan Script;
+font-size: 30px;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.text__h1{
+    font-family: 'Raleway';
+font-style: normal;
+line-height: 28px;
+font-size: 36px;
+text-align: center;
+text-transform: uppercase;
+font-weight: bold;
+color: #2D3033;
+
+}
+.text__content{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #000000;
+}
+.statistics__item{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.statistics_numb{
+    font-size: 64px;
+    font-weight: 700;
+}

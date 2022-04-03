@@ -1,0 +1,280 @@
+.body{
+    font-family: 'Raleway';
+    
+}
+.pageMain_conteiner{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.pageMain__img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -999;
+    background: url(./pageMainImg.png);
+    background-position: center, center;
+    
+}
+.pageMain__background{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -990;
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+}
+.pageMain__header{
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: 44.3% 7.5% 7.5% 7.5% 7.5% 7.5% 5.2% 13% ;
+    grid-template-rows: 100%;
+}
+.pageMain__logo{
+    justify-self: start;
+    padding-left: 11.25vw;
+}
+.pageMain__Search{
+    justify-self: start;
+    cursor: pointer;
+}
+.pageMain__searchInput{
+    display: none;
+    width: 80%;
+
+}
+.text__header:hover{
+    color: #F4BF87;
+    
+}
+.text__header:hover::after{
+    display: block;
+}
+.text__header::after{
+    content: "";
+    display: none;
+    width: 130%;
+    height: 0.15em;
+    position: absolute;
+    background-color: #F4BF87;
+    left: -15%;
+    top: 100%;
+}
+.text__header:hover::after{
+    display: block;
+}
+.text__header:focus{
+color: #F4BF87;
+outline: none;
+}
+.text__header:focus::after{
+    display: block;
+}
+.pageMain__basket:hover{
+    box-shadow: 0 0 0 2px #F4BF87;
+}
+.pageMain__basket:focus{
+    box-shadow: 0 0 0 2px #F4BF87;
+    outline: none;
+}
+
+
+.pageMain__Search:hover .pageMain__searchInput{
+    display: block;
+}
+
+.pageMain__Search:hover{
+    appearance: none;
+}
+.pageMain__midconteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 71%;
+}
+.text__Koushan_conteiner{
+    margin-top: 4.5vh;
+    
+}
+.text__bigHeader_conteiner{
+
+    padding: 0 20vw;
+    margin-top: 2vh;
+}
+.pageMain__divider{
+    width: 11.25vw;
+    border: 4px solid #FFFFFF;
+    background-color: #FFFFFF;
+    margin-top: 3.29vh;
+
+}
+.pageMain__btn{
+    font-family: Raleway;
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFFFFF;
+text-decoration: none;
+text-transform: uppercase;
+border: 4px solid #FFFFFF;
+padding: 1.11vw 9.22vh;
+margin-top: 6.2vh;
+transition: all 0.5s;
+}
+.pageMain__btn:hover{
+    background-color: #FFFFFF;
+    color: #F4BF87;
+}
+.pageMain__btn:focus{
+    background-color: #FFFFFF;
+    color: #F4BF87;
+    border: #F4BF87;
+    outline: none;
+
+}
+.slider__nuber{
+    font-family: 'Raleway';
+font-style: normal;
+font-size: 24px;
+font-weight: 700;
+color: #F9EFCF;
+}
+.slider__item{
+    
+    
+    color: #F9EFCF;
+    opacity: 0.7;
+    width: 17.88vw;
+    border-top: 4px solid #FFFFFF;
+    padding-top:2vh ;
+    cursor: pointer;
+    position: relative;
+   
+}
+.slider__item_text{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.pageMain__slider{
+    display: flex;
+    margin: 8.74vh 10.25vw 0 10.25vw;
+    gap: 2vw;
+
+}
+
+
+.activ::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 4.6vw;
+    height: 4px;
+    top: -4;
+    left: 0;
+    z-index: 1;
+    background-color: #F38281;
+    bottom: 0;
+}
+.pageMain__smartMenu{
+    display: none;
+}
+.smartConteiner{
+    display: block;
+}
+
+.pageMain__smartMenu:focus + .smartMenu{
+    display: flex;
+}
+.pageMain__smartMenu:focus{
+    background-color: aqua;}
+    .pageMain__smartMenu:focus + .smartConteiner{
+    
+        display: none;
+}
+
+
+
+.smartMenu{
+    display: none;
+}
+@media (max-height: 694px) and (max-width: 1024px){
+    .pageMain__logo{
+        width: 66px;
+        height: 18px;
+    }
+    .text__header{
+        font-size: 13px;
+        font-weight: 15px;
+    }
+    .pageMain__basket{
+        width: 14px;
+        height: 11px;
+    }
+    .pageMain__Search{
+        width: 13px;
+        height: 13px;
+    }
+    .text__Koushan{
+        font-size: 38px;
+    }
+    .text__bigHeader{
+        font-size: 86px;
+    }
+    .pageMain__btn{
+        font-size: 18px;
+    }
+
+}
+@media (max-height: 574px) and (max-width: 320px){
+    .slider__item_text{
+        display: none;
+    }
+    .slider__nuber{
+        display: none;
+    }
+    .text__header{
+        display: none;
+    }
+    .pageMain__basket{
+        display: none;
+    }
+    .pageMain__Search{display: none;
+    }
+    .pageMain__logo{
+        width: 54px;
+        height: 15px;
+        padding-left: 16px;
+    }
+    .text__Koushan{
+        font-size: 36px;
+    }
+    .text__bigHeader{
+font-size: 48px;
+font-weight: 58px;
+    }
+    .pageMain__divider{
+        border: 2px solid #fff;
+        width: 134px;
+        margin-top: 10.5vh;
+    }
+    .pageMain__btn{
+        padding: 3.5vw 13.22vh;
+    }
+    .activ::after{
+    
+        width: 100%;
+    }
+    .pageMain__smartMenu{
+        display: block;
+        top: 19px;
+        left: 263px;
+        position: absolute;
+    }
+}
