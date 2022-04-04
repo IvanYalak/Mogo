@@ -16,7 +16,7 @@
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
 }
-@media (max-height: 694px) and (max-width: 1024px){
+@media(max-width: 1024px){
     .statistics_numb{
         font-size: 48px;
     }
@@ -26,8 +26,11 @@
     .statistics__conteiner{
         height: 167px;
     }
+    .pageDevice__itemconteiner{
+        margin: 10vh 0;
+    }
 }
-@media (max-height: 574px) and (max-width: 320px){
+@media (max-width: 400px){
     .statistics__conteiner{
         height: 374;
         position: absolute;

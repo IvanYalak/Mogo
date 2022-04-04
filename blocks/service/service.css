@@ -29,6 +29,8 @@ margin: 32px 0;
      align-items: flex-start;
      justify-content: center;
      gap: 30px;
+     margin: 0 auto;
+     margin: 0 11vw;
  }
  .service__acardionText{
     
@@ -40,7 +42,7 @@ margin: 32px 0;
  .service__acardion{
      display: flex;
      flex-direction: column;
-     width: 570;
+     
  }
  .service__acardionItem{
      text-decoration: none;
@@ -64,6 +66,34 @@ margin: 32px 0;
  }
  .gap{
      margin-top: 22;
+ }
+ @media(max-width: 400px){
+    .service__conteiner{
+        position: relative;
+        top: 1965;
+    }
+    .service__text{
+        margin: 70 0 ;
+    }
+    .service__content_conteiner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .service__img{
+        margin: 0 auto;
+    }
+    .service__acardion{
+        width: 100%
+    }
+    .service__acardionText{
+        font-size: 13px;
+    }
+    .service__acardionItem_text{
+        font-size: 14px;
+    }
+    .worck__content{
+        margin-top: 45;
+    }
  }
  
  

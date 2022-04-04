@@ -204,7 +204,7 @@ color: #F9EFCF;
 .smartMenu{
     display: none;
 }
-@media (max-height: 694px) and (max-width: 1024px){
+@media (max-width: 1024px){
     .pageMain__logo{
         width: 66px;
         height: 18px;
@@ -232,7 +232,7 @@ color: #F9EFCF;
     }
 
 }
-@media (max-height: 574px) and (max-width: 320px){
+@media (max-width: 400px){
     .slider__item_text{
         display: none;
     }

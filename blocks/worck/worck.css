@@ -26,8 +26,21 @@ color: #2D3033;
     display:flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50;
     
     
+}
+.worck__intro{
+    position: relative;
+}
+.worck__intro::after{
+    content: "";
+    border: 2px solid #F38281;
+    position: absolute;
+    top: 86px;
+    left: 90px;
+    width: 170px;
+    background-color: #F38281;
 }
 .worck__content1{
     display: flex;
@@ -50,7 +63,7 @@ color: #2D3033;
     align-items: center;
     width: 17.88vw;
 }
-@media (max-height: 574px) and (max-width: 320px){
+@media(max-width: 400px){
     .worck__content1{
         flex-direction: column;
         margin-bottom: 0;
