@@ -27,21 +27,13 @@ color: #2D3033;
     flex-direction: column;
     align-items: center;
     margin-top: 50;
+    cursor: pointer;
     
     
 }
-.worck__intro{
-    position: relative;
-}
-.worck__intro::after{
-    content: "";
-    border: 2px solid #F38281;
-    position: absolute;
-    top: 86px;
-    left: 90px;
-    width: 170px;
-    background-color: #F38281;
-}
+
+
+
 .worck__content1{
     display: flex;
     flex-direction: row;
@@ -69,9 +61,11 @@ color: #2D3033;
         margin-bottom: 0;
     
     }
-    .worck__conteiner{
-        position: absolute;
-        top: 2240px;
+    .text__h1{
+        font-size: 24;
+    }
+    .worck__content{
+        max-width: 320;
     }
     .worck__text{
         font-size: 18px;

@@ -1,0 +1,130 @@
+.pageWorks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1170;
+}
+.pageWorks__conteiner{
+    display: grid;
+    grid-template-columns: 370 370 370 370;
+    grid-template-rows: 378 378;
+}
+.long{
+    grid-row: 1/3;
+    grid-column: 3/4;
+}
+.pageWorks__item{
+    position: relative;
+}
+.pageWorks__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+align-items: center;
+    transition: all 0.5s;
+    width: 370;
+    height: 377;
+    gap: 15;
+    justify-content: center;
+}
+.longBG{
+    height: 756;
+}
+.pageWorks__item:hover .pageWorks__background{
+    opacity: 1;
+}
+.pageWorks__texth1{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+padding-top: 57;
+color: #FFFFFF;
+}
+.pageWorks__text{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+@media(max-width: 1024px){
+    .pageWorks{
+        max-width: 1024;
+    }
+    .pageteam__text{
+        max-width: 990;
+    }
+    .pageWorks__conteiner{
+        grid-template-columns: 255 255 255 255;
+        grid-template-rows: 255 255;
+    }
+    .pageWorks__background{
+        width: 255;
+        height: 255;
+    }
+    .pageWorks__texth1{
+        font-size: 18;
+    }
+    .pageWorks__text{
+        font-size: 14;
+    }
+    .longBG{
+       height: 510;
+    }
+}
+@media(max-width: 400px){
+    .pageWorks{
+        max-width: 320;
+    }
+    .pageWorks__conteiner{
+        grid-template-columns: 159 160;
+        grid-template-rows: 152 152 152 152 152;
+    }
+    .smart1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .smart2{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .long{
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    .smart3{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .smart4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .smart5{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    .smart6{
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+    }
+    .pageWorks__background{
+        display: none;
+    }
+}

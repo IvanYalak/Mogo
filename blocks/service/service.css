@@ -38,12 +38,36 @@ margin: 32px 0;
      border-left: 1px solid #C6CBCD;
      border-right: 1px solid #C6CBCD;
      overflow: scroll;
+     font-family: 'Raleway';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 21px;
+     display: flex;
+     align-items: center;
+     overflow-x: hidden;
+     color: #2D3033;
+     height: 160;
+     padding: 0 54 0 22;
+     display: none;
+ }
+ .service__acardioncheckbox{
+     display: none;
+ }
+ .service__acardioncheckbox:checked + .service__acardionItem_arrow{
+     transform: rotate(90deg);
+ }
+ .service__acardioncheckbox:checked + .service__acardionText{
+     display: block;
  }
  .service__acardion{
      display: flex;
      flex-direction: column;
+     width: 570;
+     gap: 22;
      
  }
+ 
  .service__acardionItem{
      text-decoration: none;
      height: 92;
@@ -52,7 +76,9 @@ margin: 32px 0;
      justify-content: space-between;
      border: 1px solid #C6CBCD;
      
+     
  }
+ 
  .service__acardionItem_text{
     font-family: 'Raleway';
     font-style: normal;
@@ -64,16 +90,23 @@ margin: 32px 0;
     
     color: #2D3033;
  }
- .gap{
-     margin-top: 22;
+ @media(max-width: 1024px){
+    .service__conteiner{
+        max-width: 990;
+        
+    }
+    .service__content_conteiner{
+        width: 100%;
+    }
  }
  @media(max-width: 400px){
-    .service__conteiner{
-        position: relative;
-        top: 1965;
-    }
+    
     .service__text{
-        margin: 70 0 ;
+        margin: 0 16 ;
+        max-width: 288;
+    }
+    .text__content{
+        font-size: 12;
     }
     .service__content_conteiner{
         flex-direction: column;

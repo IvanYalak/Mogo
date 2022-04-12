@@ -1,0 +1,144 @@
+.PageClient{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.pageClient__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+.pageClient__background{
+    position: absolute;
+    z-index: -900;
+    top: 0;
+    left: 0;
+    width: 1510;
+    height: 923;
+    background-color: #FFFFFFE5;
+}
+.pageClient__conteiner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1170;
+}
+.pageClient__bloks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 42;
+    column-gap: 52;
+}
+.pageClient__item{
+    display: flex;
+    flex-direction: row;
+    gap: 50;
+
+}
+.pageClient__content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20;
+}
+.pageClient__contentHeader{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #2D3033;
+}
+.pageClient__contentProfession{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #2D3033;
+}
+.pageClient__content__line{
+   
+    border: 2px solid #F38281;
+    
+    width: 70px;
+    background-color: #F38281;
+    display: block;
+}
+.pageClient__contentText{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #2D3033;
+padding-top: 50;
+}
+@media(max-width: 1024px){
+    .pageteam__header{
+        margin: 40 0;
+    }
+    .service__text{
+        margin: 40 115;
+    }
+    .text__h1{
+        margin-top: 0;
+        font-size: 24;
+    }
+    .text__headerKaushan{
+        font-size: 24;
+    }
+    .pageClient__content{
+        gap: 10;
+    }
+    .pageClient__contentHeader{
+        font-size: 18;
+    }
+    .pageClient__contentProfession{
+        font-size: 14;
+    }
+    .pageClient__contentText{
+        font-size: 14;
+        padding-top: 0;
+    }
+}
+@media(max-width: 400px){
+    .pageClient__background{
+        width: 320;
+        height: 1510;
+    }
+    .pageClient__bloks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30;
+        max-width: 320;
+    }
+    .pageClient__item{
+        flex-direction: column;
+        align-items: center;
+        gap: 20;
+    }
+    .pageClient__content{
+        align-items: center;
+    }
+    .pageClient__contentText{
+        max-width: 288;
+    }
+}

@@ -4,7 +4,7 @@
     align-items: center;
     width: 100vw;
     position: relative;
-    height: 100vh;
+
     background-color: rgba(255, 255, 255, 0.8);;
 }
 .pageDevice__img{
@@ -19,7 +19,7 @@
     margin-top: 70;
     }
     .pageDevice__itemconteiner{
-        margin: 8vh 0;
+        
         border: 10px solid #333;
         border-radius: 10px;
         position: relative;
@@ -33,36 +33,21 @@
     width: 148px;
     background-color: #333;
     }
-    .pageDevice__position{
-        position: relative;
-        z-index: 900;
-        display: block;
-    }
+
     .pageDevice__itemconteiner2{
         position: absolute;
-        bottom: -40;
-        left: 180;
+        bottom: -45;
+        right: -40;
         z-index: 5;
     }
-        .pageDevice__itemconteiner3{
-            position: absolute;
-            bottom: -40;
-            left: 186;
-        height: 410px;
-        }
+        
         @media(max-width: 1024px){
             .pageDevice__itemconteiner2{
-                bottom: -5px;
-                left: 125px;
+                bottom: -35px;
+                right: -30;
             }
-            .pageDevice__itemconteiner3{
-                bottom: -135px;
-                left: 130px;
-            }
-            .pageDevice__conteiner{
-                width: 1024;
-                height: 588;
-            }
+           
+            
             .pageDevice__h2{
                 margin-top: 30px;
             }
@@ -80,8 +65,8 @@
         }
         @media (max-width: 400px){
             .pageDevice__conteiner{
-                bottom: -1975;
-                width: 100%;
+                max-width: 320;
+               
                 height: 514;
             }
             .pageDevice__itemconteiner::after{
@@ -91,18 +76,31 @@
                 border: 1px solid #333;
             }
             .pageDevice__itemconteiner2{
-                bottom: 10px;
-    left: 71px;
+                bottom: -60px;
+                right: 20px;
             }
-            .pageDevice__itemconteiner3{
-                bottom: -226px;
-    left: 75px;
-            }
+            
             .intro__content{
                 margin: 70 auto;
             }
             .intro__imgConteiner{
                 margin-top: 0;
+            }
+            .pageMain_conteiner{
+                max-width: 320;
+            }
+            .pageMain__img{
+                width: 100vw;
+            }
+            .pageMain__background{
+
+                width: 100vw;
+            }
+            .pageMain_conteiner {
+                max-width: 320px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
 

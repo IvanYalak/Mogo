@@ -1,20 +1,27 @@
 .question__page{
     width: 100vw;
     background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.lith{
+    background-color: #fff;
 }
 .question__conteiner{
     display: flex;
-    margin: 14vh 13vw;
+    margin: 120 auto;
     align-items: center;
     flex-direction: row;
     gap: 30;
+    max-width: 1200;
 }
 
 .question_text{
     font-family: 'Raleway';
 font-style: italic;
 font-weight: 500;
-font-size: 18px;
+font-size: 24px;
 max-width: 770;
 
 display: flex;
@@ -27,7 +34,12 @@ color: #A9AFB1;
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
+    margin-right: 30;
 }
+.question__lith{
+    margin-left: 30;
+}
+
 .question__contentItem{
     display: flex;
     flex-direction: row;
@@ -46,7 +58,7 @@ color: #A9AFB1;
     font-family: 'Kaushan Script';
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
+font-size: 30px;
 
 display: flex;
 align-items: center;
@@ -57,10 +69,11 @@ color: #000000;
     display: none;
 }
 @media (max-width: 400px){
-    .question__page{
-        position: relative;
-        bottom: -1900;
+    .intro__content{
+        margin: 30 16;
+        max-width: 288;
     }
+    
     .question_arrow{
         display: none;
     }
@@ -81,5 +94,12 @@ color: #000000;
     .question_text{
         font-size: 14;
         max-width: 288;
+    }
+}
+@media(max-width: 400px){
+    .question__conteiner{
+        max-width: 320;
+        margin: 60 auto;
+        flex-direction: column;
     }
 }

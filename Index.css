@@ -11,3 +11,9 @@
 @import url(./blocks/service/service.css);
 @import url(./node_modules/bootstrap/dist/css/bootstrap.css);
 @import url(./blocks/question/question.css);
+@import url(./blocks/pageteam/pageteam.css);
+@import url(./blocks/pageLogos/pagelogos.css);
+@import url(./blocks/pageWorks/pageWorks.css);
+@import url(./blocks/pageClient/pageClient.css);
+@import url(./blocks/stories/stories.css);
+@import url(./blocks/Footer/footer.css);

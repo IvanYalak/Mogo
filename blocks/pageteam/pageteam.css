@@ -1,0 +1,143 @@
+.pageteam__conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1170;
+    
+}
+.pageteam__header{
+    margin: 80 0 20 0;
+}
+.pageteam__text{
+    display: flex;
+    align-items: center;
+    margin: 30 0;
+    text-align: center;
+}
+.pageTeam__content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30;
+    margin: 55 0 85 0;
+}
+.pageteam__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.pageteam__background{
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 370;
+   height: 424;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.5s;
+   opacity: 0;
+}
+.pageteam__background:hover{
+    top: -16;
+    left: -16;
+    opacity: 1;
+}
+.pageteam__background:focus{
+    top: -16;
+    left: -16;
+    opacity: 1;
+}
+.pageteam__network{
+    background-color: #F9EFCF;
+    width: 42;
+    height: 42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pageteam__network:hover{
+    background-color: #F38281;
+}
+.pageteam__network:focus{
+    background-color: #F38281;
+}
+.pageteam__svg{
+    fill: #F38281;
+}
+.pageteam__svg:hover{
+    fill: #FFFFFF;
+}
+.pageteam__svg:focus{
+    fill: #FFFFFF;
+}
+.pageteam__name{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+margin: 20 0;
+color: #2D3033;
+}
+.pageteam__profession{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+color: #2D3033;
+}
+@media (max-width: 1025px){
+    .pageteam__conteiner{
+        max-width: 990;
+    }
+    .pageTeam__content{
+        gap: 20;
+    }
+    .pageteam__background{
+        width: 317;
+        height: 359;
+        top: -4;
+        left: -4;
+    }
+}
+@media (max-width: 400px){
+ m.pageteam__conteiner{
+    max-width: 320;
+}
+.pageTeam__content{
+    flex-direction: column;
+}
+.pageteam__background{
+    width: 292;
+    height: 335;
+opacity: 1;
+ align-items: flex-end;
+ justify-content: flex-end;
+ background: rgba(0, 0, 0, 0);
+ top: 0;
+ left: 0;
+ 
+    
+}
+.pageteam__background:hover{
+    top: 0;
+    left: 0;
+    
+    
+}
+.pageteam__network{
+    opacity: 1;
+}
+}

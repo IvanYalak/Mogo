@@ -2,7 +2,7 @@
     font-family: Raleway;
 font-size:14px;
 font-weight: 600;
-line-height: 16px;
+
 letter-spacing: 0em;
 text-align: center;
 color: #FFFFFF;
@@ -45,14 +45,15 @@ text-align: center;
 text-transform: uppercase;
 font-weight: bold;
 color: #2D3033;
+margin-top: 30px;
 
 }
 .text__content{
     font-family: 'Raleway';
 font-style: normal;
 font-weight: 300;
-font-size: 14px;
-line-height: 16px;
+font-size: 18px;
+
 text-align: center;
 
 color: #000000;

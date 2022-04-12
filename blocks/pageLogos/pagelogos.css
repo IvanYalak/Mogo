@@ -1,0 +1,27 @@
+.pageLogos{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6vw;
+    background-color: #F8F8F8;
+    justify-content: center;
+    padding: 60 0;
+    
+}
+@media (max-width: 400px){
+    .pageLogos{
+        flex-wrap: wrap;
+        padding: 20 0;
+        gap: 50;
+        align-items: center;
+        
+    }
+    
+    .pageLogos__item3{
+flex: 100%;
+    }
+    .pageLogos__item6{
+flex: 100%;
+    }
+}

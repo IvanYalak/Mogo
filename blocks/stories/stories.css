@@ -1,0 +1,149 @@
+.stories{
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 1170;
+margin-bottom: 90;
+margin-top: 100;
+}
+.stories__conteiner{
+    display: flex;
+    flex-direction: row;
+    gap: 30;
+}
+.stories__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30;
+}
+.stories__itemContent{
+    position: relative;
+}
+.stories__itemDate{
+    position: absolute;
+    bottom: 25;
+    left: -14;
+    background-color: #95E1D3;
+    width: 80px;
+height: 80px;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 30px;
+/* or 83% */
+
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.stories__itemHeader{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #2D3033;
+}
+.stories__itemText{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: #2D3033;
+
+}
+.stories__itemStatistic{
+    display: flex;
+    flex-direction: row;
+    gap: 25;
+}
+.stories__blog{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 231;
+    
+}
+.stories__blogIMG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+    width: 100vw;
+}
+.stories__blogBackground{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: -900;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFFE5;
+}
+.stories__blogSVG{
+    padding: 46 0;
+}
+.stories__blogHeadder{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #F38281;
+}
+
+.stories__blogLine{
+border: 2px solid #F38281;
+   margin: 50 auto; 
+width: 170px;
+background-color: #F38281;
+display: block;
+
+}
+@media(max-width: 1024px){
+    .stories{
+        max-width: 1000;
+        margin-top: 50;
+        margin-bottom: 30;
+    }
+    .stories__itemHeader{
+        font-size: 18;
+    }
+    .stories__itemText{
+        font-size: 14;
+    }
+    .stories__blogSVG{
+        padding: 20 0;
+    }
+    .stories__blogLine{
+        margin: 15 auto;
+    }
+}
+@media(max-width: 400px){
+    .stories__conteiner{
+        flex-direction: column;
+    }
+    .stories__itemText{
+        max-width: 288;
+    }
+}
